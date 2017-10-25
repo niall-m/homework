@@ -5,7 +5,7 @@ class BooksController < ApplicationController
   end
 
   def new
-    render :new 
+    render :new
   end
 
   def create
