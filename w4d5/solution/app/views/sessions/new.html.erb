@@ -1,13 +1,11 @@
-<section class="page"><div class="centered-box">
+<section class="page">
+  <div class="centered-box">
     <h1>Sign in</h1>
 
       <%= render "shared/errors" %>
 
     <form action="<%= session_url %>" method="post">
-      <input
-        type="hidden"
-        name="authenticity_token"
-        value="<%= form_authenticity_token %>">
+      <%= auth_token %>
 
       <label for="user_username">User Name</label>
       <input type="text" name="user[username]" id="user_username">
@@ -19,4 +17,9 @@
 
       <input type="submit">
     </form>
-</div></section>
+  </div>
+</section>
+
+<% content_for :footer do %>
+  <p>This is the log-in page.</p>
+<% end %>
