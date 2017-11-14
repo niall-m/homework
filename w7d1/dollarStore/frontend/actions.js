@@ -6,4 +6,6 @@ const selectCurrency = (baseCurrency, rates) => {
   };
 };
 
+window.selectCurrecy = selectCurrency;
+
 export default selectCurrency;

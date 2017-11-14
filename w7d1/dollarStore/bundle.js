@@ -9779,6 +9779,8 @@ var selectCurrency = function selectCurrency(baseCurrency, rates) {
   };
 };
 
+window.selectCurrecy = selectCurrency;
+
 exports.default = selectCurrency;
 
 /***/ }),
